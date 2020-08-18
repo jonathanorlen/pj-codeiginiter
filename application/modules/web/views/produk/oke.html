@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+	<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#show").click(function(){
+        $(".oke").show();
+    });
+    $("#hide").click(function(){
+        $(".oke").hide();
+    });
+});
+</script>
+<style>
+.button {
+    border: none;
+    color: white;
+    padding: 11px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:10px;
+}
+
+.button2{
+	background-color:#008CBA;
+}
+
+.button1{
+	background-color:#4CAF50;	
+}
+</style>
+	</head>
+		<body>
+			<center>
+				<button type="button" class="button button1" id="show">Custom</button>
+			</center>
+			<center style="display:none" class="oke">
+			    
+			<div style="width:41.5%;height:70px;background-color:grey;border-radius:10px;" class="muncul">
+				<div style="float:left;margin-left:20px;margin-top:20px;" >
+					<div>
+						<select placeholder="Nama Barang" name="nama_bahan_baku" style="width:125px;height:30px;border-style:none" >
+							<option disabled="">PILIH BARANG</option>
+							<option value="semen">SEMEN</option>
+						</select>
+					</div>
+				</div>
+				<div style="float:left;margin-left:20px;margin-top:10px;margin-top:20px;">
+					<div>
+						<input type="text" placeholder="QTY" style="width:125px;height:30px;border-style:none;" name="qty_grosir" >
+					</div>
+				</div>
+				<div style="float:left;margin-left:20px;margin-top:10px;;margin-top:20px;">
+					<div>
+						<input type="text" placeholder="Harga" style="width:125px;height:30px;border-style:none;" name="harga_jual_1">
+					</div>
+				</div>
+				<div style="float:left;margin-left:20px;margin-top:13px">
+					<div>
+						<button type="submit" value="submit" id="hide" class="button button2">add</button>
+					</div>
+				</div>
+			</div>
+
+			</center>
+		</body>
+</html>

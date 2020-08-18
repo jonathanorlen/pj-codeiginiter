@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+	<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#show").click(function(){
+        $("center").show(400);
+    });
+    $("#hide").click(function(){
+        $("center").hide(400);
+    });
+});
+</script>
+
+	</head>
+		<body>
+			<button type="button" style="width:65px;height:30px" id="show">Custom</button>
+			<center>
+			
+			<div style="width:40%;height:70px;background-color:grey;border-radius:10px" class="muncul">
+				<div style="float:left;margin-left:20px;margin-top:20px;" >
+					<div>
+						<select placeholder="Nama Barang" name="nama_bahan_baku" >
+							<option disabled="">PILIH BARANG</option>
+							<option value="semen">SEMEN</option>
+						</select>
+					</div>
+				</div>
+				<div style="float:left;margin-left:20px;margin-top:10px;margin-top:20px;">
+					<div>
+						<input type="text" placeholder="QTY" style="width:125px;height:30px;border-style:none;" name="qty_grosir" >
+					</div>
+				</div>
+				<div style="float:left;margin-left:20px;margin-top:10px">
+					<div>
+						<input type="text" placeholder="Harga" style="width:100px;border-style:none;" name="harga_jual_1">
+					</div>
+				</div>
+				<div style="float:left;margin-left:20px;margin-top:10px">
+					<div>
+						<button type="button" class="hide">add</button>
+					</div>
+				</div>
+			</div>
+			</center>
+		</body>
+</html>
